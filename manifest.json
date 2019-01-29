@@ -1,0 +1,42 @@
+{
+  "Actions": [
+    {
+      "Icon": "resources/actionIcon",
+      "Name": "Home Assistant Button",
+      "States": [
+    {
+      "Image": "resources/actionDefaultImage",
+      "TitleAlignment": "bottom",
+      "FontSize": "10"
+    }
+  ],
+  "SupportedInMultiActions": true,
+  "Tooltip": "Awaken your home using Home Assistant and Stream Deck!",
+  "UUID": "de.tobimori.streamdeck.homeassistant.action"
+}
+],
+"Author": "tobimori",
+"CodePath": "plugin/main.html",
+"Description": "\uD83C\uDFE0 Use the Elgato Stream Deck as Home Assistant controller. Call any available service and toggle lights or resume your music.",
+"Name": "Home Assistant",
+"Icon": "resources/pluginIcon",
+"URL": "https://streamdeck.tobimori.de",
+"PropertyInspectorPath": "propertyinspector/main_pi.html",
+"Version": "1.0",
+"Category": "tobimori",
+"CategoryIcon": "resources/categoryIcon",
+"OS": [
+{
+  "MinimumVersion" : "10.12",
+  "Platform": "mac"
+},
+  {
+"Platform": "windows",
+"MinimumVersion" : "10"
+    }
+  ],
+"Software":
+{
+  "MinimumVersion" : "4.0.2"
+}
+}

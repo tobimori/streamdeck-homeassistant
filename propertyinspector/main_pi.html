@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>de.tobimori.streamdeck.homeassistant.pi</title>
+    <link rel="stylesheet" href="sdpi.css">
+    <script src="main_pi.js"></script>
+</head>
+
+<body>
+<div class="sdpi-wrapper hidden">
+
+    <div class="sdpi-heading">SETTINGS</div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Home Assistant Address</div>
+            <input class="sdpi-item-value" id="ip" value="" onchange="updateSettings()" placeholder="Enter the URL to your Home Assistant frontend" required>
+        </div>
+        <div class="sdpi-item">
+           <div class="sdpi-item-label">Authorization Token</div>
+           <input class="sdpi-item-value" id="authtoken" value="" onchange="updateSettings()" placeholder="Enter a long-live auth token" required>
+        </div>
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Service Domain</div>
+            <input class="sdpi-item-value" id="domain" value="" onchange="updateSettings()" placeholder="Enter the service domain (e.g. light)" required>
+        </div>
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Service</div>
+            <input class="sdpi-item-value" id="service" value="" onchange="updateSettings()" placeholder="Enter the service to be called (e.g. toggle)" required>
+        </div>
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Service Data</div>
+            <input class="sdpi-item-value" id="data" value="" onchange="updateSettings()" placeholder="Optional: Enter the service data (e.g. the entity id)">
+        </div>
+</div>
+</body>
+
+</html>
