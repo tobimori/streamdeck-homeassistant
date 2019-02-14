@@ -78,11 +78,10 @@ const webhookAction = {
     }
 };
 
-function connectSocket(inPort, inPluginUUID, inRegisterEvent, inInfo)
+function connectElgatoStreamDeckSocket(inPort, inPluginUUID, inRegisterEvent, inInfo)
 {
-    pluginUUID = inPluginUUID;
 
-    // Open the web socket
+    pluginUUID = inPluginUUID;
     websocket = new WebSocket("ws://localhost:" + inPort);
 
     function registerPlugin(inPluginUUID)
@@ -91,7 +90,6 @@ function connectSocket(inPort, inPluginUUID, inRegisterEvent, inInfo)
             "event": inRegisterEvent,
             "uuid": inPluginUUID
         };
-
         websocket.send(JSON.stringify(json));
     };
 

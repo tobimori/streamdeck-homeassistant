@@ -72,8 +72,19 @@ function requestSettings() {
     }
 }
 
+function jsonTest(json) {
+    try {
+        JSON.parse(json);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+
 function updateSettings() {
     if (websocket) {
+        const el = document.querySelector('.validator');
+        el && el.classList.add('hidden');
         let payload = {};
 
         payload.type = "updateSettings";
@@ -91,7 +102,15 @@ function updateSettings() {
         payload.service = service.value;
 
         const data = document.getElementById('data');
-        payload.data = data.value;
+        if(data.value !== "") {
+            let result = jsonTest(data.value);
+            if(result) {
+                payload.data = data.value;
+            } else {
+                const el = document.querySelector('.validator');
+                el && el.classList.remove('hidden');
+            }
+        }
 
         console.log(payload);
         const json = {

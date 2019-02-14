@@ -2,7 +2,7 @@
   "Actions": [
     {
       "Icon": "resources/actionIcon",
-      "Name": "Home Assistant Button",
+      "Name": "Light Toggle",
       "States": [
     {
       "Image": "resources/actionDefaultImage",
@@ -12,19 +12,19 @@
   ],
   "SupportedInMultiActions": true,
   "Tooltip": "Awaken your home using Home Assistant and Stream Deck!",
-  "UUID": "de.tobimori.streamdeck.homeassistant.action"
+  "UUID": "de.tobimori.streamdeck.homeassistant.light.toggle"
 }
 ],
 "Author": "tobimori",
 "CodePath": "plugin/main.html",
 "Description": "\uD83C\uDFE0 Use the Elgato Stream Deck as Home Assistant controller. Call any available service and toggle lights or resume your music.",
-"Name": "Home Assistant",
+"Name": "Home Assistant SDK Version 2 ALPHA",
 "Icon": "resources/pluginIcon",
 "URL": "https://streamdeck.tobimori.de",
 "PropertyInspectorPath": "propertyinspector/main_pi.html",
-"Version": "1.0",
-"Category": "tobimori",
-"CategoryIcon": "resources/categoryIcon",
+"Version": "2.0",
+"Category": "Home Assistant",
+"CategoryIcon": "resources/actionIcon",
 "OS": [
 {
   "MinimumVersion" : "10.12",
@@ -35,8 +35,6 @@
 "MinimumVersion" : "10"
     }
   ],
-"Software":
-{
-  "MinimumVersion" : "4.0.2"
-}
+"Software": {"MinimumVersion" : "4.1."},
+"SDKVersion": 2
 }

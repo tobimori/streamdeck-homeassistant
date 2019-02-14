@@ -249,6 +249,10 @@ option {
   max-width: 344px;
 }
 
+.hidden {
+  display: none;
+}
+
 .sdpi-item:first-child {
   margin-top:1px;
 }
