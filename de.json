@@ -1,8 +1,0 @@
-{
-  "Description": "\uD83C\uDFE0 Verwende das Elgato Stream Deck als Home Assistant-Steuerzentrale. Rufe jeden beliebigen Dienst ab und schalte deine Lampen um oder spiele Musik ab.",
-  "Name": "Home Assistant",
-  "de.tobimori.streamdeck.homeassistant.action": {
-    "Name": "Home Assistant-Knopf",
-    "Tooltip": "Erwecke dein Zuhause mit Home Assistant und dem Stream Deck!"
-  }
-}
