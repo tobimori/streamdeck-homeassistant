@@ -1,3 +1,7 @@
+> This plugin is currently undergoing a complete rewrite. It's not recommended for use, as it's very old and still depends on version 1 of the Stream Deck SDK. It should still work though.
+
+> Not working with self signed certificates.
+
 # Home Assistant for Elgato Stream Deck
 > Use the Elgato Stream Deck as Home Assistant controller. Call any available service and toggle lights or resume your music.
 
