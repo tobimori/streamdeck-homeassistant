@@ -1,4 +1,4 @@
-> This plugin is currently undergoing a complete rewrite. It's not recommended for use, as it's very old and still depends on version 1 of the Stream Deck SDK. It should still work though.
+> This plugin is outdated. As an alternative, please refer to [Christoph Giesches Home Assistant plugin for Stream Deck](https://github.com/cgiesche/streamdeck-homeassistant).
 
 > Not working with self signed certificates.
 
